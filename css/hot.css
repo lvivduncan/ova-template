@@ -38,13 +38,13 @@
     text-transform: none;
     font-size: 15px;
     font-weight: 400;
-    color: var(--gray)
+    color: var(--body-color)
 }
 
 #hot article h1 a
 {
     text-decoration: underline;
-    color: var(--gray)
+    color: var(--body-color)
 }
 
 #hot article h1 a:hover,

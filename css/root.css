@@ -24,7 +24,7 @@ body
     --add-dark: #e1e1e1;
 
     --gold: gold;
-    --gray: #8a8a8a;
+    /* --gray: var(--body-color); */
     --gray-light: #e2dcdc;
     --white: #fff;
 

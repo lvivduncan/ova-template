@@ -21,7 +21,7 @@
 #weather svg
 {
     /* fill: var(--gold); */
-    fill: var(--gray);
+    fill: var(--body-color);
 }
 
 /* логін-панель */
@@ -38,7 +38,7 @@
 
 #login a
 {
-    color: var(--gray);
+    color: var(--body-color);
     text-decoration: none;
     transition: .5s;
 }
@@ -79,7 +79,7 @@
 
 #top .social svg
 {
-    fill: var(--gray);
+    fill: var(--body-color);
     width: 16px;
     height: 16px;
 }
