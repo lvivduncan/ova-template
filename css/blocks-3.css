@@ -1,0 +1,14 @@
+/*
+ * 3 і 1 трохи ширший блок
+ */
+
+.blocks-3
+{
+    margin: calc(var(--gap20)*2) 0;
+
+    display: grid;
+    grid-gap: var(--gap20);
+    grid-template-columns: repeat(3,1fr) 1.5fr;
+}
+
+

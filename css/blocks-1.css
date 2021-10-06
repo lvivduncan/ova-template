@@ -1,0 +1,66 @@
+/*
+ * 1 велике фото, 3 блоки біля нього справа та знизу, і довгий сайдбар справа
+ */
+
+.blocks-1
+{
+    margin: calc(var(--gap20)*2) 0;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 80px auto 1fr;
+
+    grid-gap: var(--gap20);
+    grid-template-areas: 
+        'blocks_1-1 blocks_1-1 blocks_1-insert blocks_1-aside'
+        'blocks_1-1 blocks_1-1 blocks_1-2 blocks_1-aside'
+        'blocks_1-3 blocks_1-4 blocks_1-5 blocks_1-aside';
+}
+
+/* малий рекламний блок */
+.blocks-1 .insert-image
+{
+    grid-area: blocks_1-insert;
+
+    height: 80px;
+    
+    /* temp */
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blocks-1 .article:nth-of-type(1)
+{
+    grid-area: blocks_1-1;
+}
+
+.blocks-1 .article:nth-of-type(2)
+{
+    grid-area: blocks_1-2;
+}
+
+.blocks-1 .article:nth-of-type(3)
+{
+    grid-area: blocks_1-3;
+}
+
+.blocks-1 .article:nth-of-type(4)
+{
+    grid-area: blocks_1-4;
+}
+
+.blocks-1 .article:nth-of-type(5)
+{
+    grid-area: blocks_1-5;
+}
+
+.blocks-1 aside
+{
+    grid-area: blocks_1-aside;
+
+    background: var(--white);
+    padding: var(--gap10);
+}
+

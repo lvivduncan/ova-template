@@ -2,3 +2,17 @@
 @import url('./top.css');
 @import url('./header.css');
 @import url('./hot.css');
+
+/* single anounce */
+@import url('./article.css');
+
+/* та хез як їх називати, складна структура */
+
+/* 1 велике фото, 3 блоки біля нього справа та знизу, і довгий сайдбар справа */
+@import url('./blocks-1.css');
+
+/* 2 блоки вгорі, 3 внизу */
+@import url('./blocks-2.css');
+
+/* 3 і 1 трохи ширший блок */
+@import url('./blocks-3.css');

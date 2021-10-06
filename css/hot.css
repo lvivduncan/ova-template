@@ -1,17 +1,16 @@
 #hot
 {
     background: var(--white);
-    /* min-height: 40px; */
-    padding: 10px 0;
+    padding: var(--gap10) 0 var(--gap20);
 }
 
 #hot .wrapper
 {
     background: var(--add);
-    padding: 15px;
+    padding: var(--gap15);
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: var(--gap10);
     border-radius: 3px;
 }
 
@@ -24,7 +23,7 @@
     margin: 0;
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: var(--gap5);
 }
 
 /* tmp */

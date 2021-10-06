@@ -1,3 +1,8 @@
+
+/*
+ * блок з логотипом, меню та пошуком
+ */
+
 #header
 {
     background: var(--white);
@@ -9,7 +14,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
 }
 
 #logo
@@ -39,7 +43,7 @@
     text-decoration: none;
     color: var(--first);
     display: block;
-    padding: 5px 10px;
+    padding: var(--gap5) var(--gap10);
     font-weight: 600;
     transition: .5s;
 }
@@ -49,6 +53,9 @@
     color: var(--second);
 }
 
+/*
+TODO: search button
+*/
 /* right block*/
 #search
 {
@@ -58,13 +65,13 @@
 #search form
 {
     display: flex;
-    gap: 5px;
+    gap: var(--gap5);
 }
 
 #search input
 {
     width: 100%;
-    padding: 5px 10px;
+    padding: var(--gap5) var(--gap10);
     outline: none;
     border: none;
     border-right: 1px solid var(--gray-light);

@@ -29,6 +29,14 @@ body
     --white: #fff;
 
     /* TODO: dark theme */
+
+    --gap20: 20px;
+    --gap15: 15px;
+    --gap10: 10px;
+    --gap5: 5px;
+
+
+    --body-bg: #f5f5f5;
 }
 
 body
@@ -36,7 +44,7 @@ body
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 15px;
     color: var(--gray);
-    background: var(--gray-light);
+    background: var(--body-bg);
 }
 
 p
@@ -50,6 +58,31 @@ h1,h2,h3,h4,h5
     margin: 0 0 20px;
 }
 
+h1
+{
+    font-size: 32px;
+}
+
+h2
+{
+    font-size: 28px;
+}
+
+h3
+{
+    font-size: 24px;
+}
+
+h4
+{
+    font-size: 20px;
+}
+
+h5
+{
+    font-size: 16px;
+}
+
 /* вертикальна риска */
 i
 {
@@ -60,12 +93,6 @@ i
     width: 1px;
     background: var(--gray-light);
     margin: 0 10px;
-}
-
-img
-{
-    max-width: 100%;
-    height: auto;
 }
 
 a
@@ -93,4 +120,86 @@ a:focus
     .wrapper{
         width: 95%;
     }
+}
+
+
+
+/* default position image */
+img
+{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+picture img, 
+picture source
+{
+    width: 100%;
+    height: auto;
+}
+/* default position image */
+
+/* 19:6 */
+.picture
+{
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.picture picture
+{
+    display: block;
+    width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.picture picture img
+{
+    width: 100%!important;
+    height: 100%!important;
+    object-fit: cover;
+}
+/* 19:6 */
+
+
+
+/* заголовки */
+.title
+{
+    position: relative;
+    padding: 0 0 0 var(--gap10);
+    margin: 0 0 var(--gap20);
+    font-size: 24px!important;
+    color: var(--first);
+    font-weight: 500!important;
+}
+
+.title::before
+{
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 3px;
+    background: var(--second);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+/* мітки */
+.tags
+{
+    position: relative;
 }

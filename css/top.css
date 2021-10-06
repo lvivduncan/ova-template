@@ -33,7 +33,7 @@
 #login li
 {
     display: inline-block;
-    margin: 0 5px;
+    margin: 0 var(--gap5);
 }
 
 #login a
@@ -57,7 +57,7 @@
 .social li
 {
     display: inline-block;
-    margin: 0 5px;
+    margin: 0 var(--gap5);
 }
 
 .social li a
@@ -74,7 +74,7 @@
 #top .social
 {
     margin-left: auto;
-    margin-right: 10px;
+    margin-right: var(--gap10);
 }
 
 #top .social svg
@@ -99,9 +99,9 @@
 {
     background: var(--second);
     color: var(--add);
-    padding: 0 10px;
+    padding: 0 var(--gap10);
     display: flex;
     height: 100%;
     align-items: center;
-    gap: 10px;
+    gap: var(--gap10);
 }
