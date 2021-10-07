@@ -89,6 +89,14 @@ h5
     font-size: 16px;
 }
 
+/* горизонтальна риска */
+hr
+{
+    border: none;
+    border-top: 1px solid var(--gray-light);
+    margin: var(--gap20) 0;
+}
+
 /* вертикальна риска */
 i
 {
@@ -188,6 +196,8 @@ picture source
     font-size: 24px!important;
     color: var(--first);
     font-weight: 500!important;
+    text-transform: uppercase;
+    line-height: 1;
 }
 
 .title::before

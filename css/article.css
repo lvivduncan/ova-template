@@ -59,9 +59,9 @@
     transform: scale(1.05);
 }
 
-/*
- * артикль з фоновою картинкою
- */
+/* ////////////////////////
+артикль з фоновою картинкою
+//////////////////////// */
 
 .article-bg
 {
@@ -136,4 +136,35 @@ aside .article > h1
 {
     margin: var(--gap15) 0;
     font-size: 16px;
+}
+
+/* /////////////////////////////////
+модифікатор: дані в артиклі таблицею
+///////////////////////////////// */
+.article-table
+{
+    display: flex;
+    gap: var(--gap20);
+    align-items: flex-start;
+}
+
+.article-table time
+{
+    margin: var(--gap5) 0 0!important;
+    min-width: 30px;
+}
+
+.article-table time::before
+{
+    display: none;
+}
+
+/* //////////////////////////
+модифікатор: важливий артикль
+////////////////////////// */
+.article-important h1,
+.article-important h1 a
+{
+    color: var(--second);
+    font-weight: 800;
 }

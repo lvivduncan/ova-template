@@ -1,0 +1,18 @@
+/* 
+ * 4 колонки: заголовок і 2 артикля під ним 
+ */
+
+.blocks-5
+{
+    margin: calc(var(--gap20)*2) 0;
+
+    display: grid;
+    grid-gap: var(--gap20);
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.blocks-5 .title
+{
+    margin: 0;
+}
