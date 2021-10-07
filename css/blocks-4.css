@@ -1,0 +1,94 @@
+/* 
+ * сайдбар з текстовими анонсами + 6 блоки по 3 у ряд + заголовок нед 6 анонсами
+ */
+
+.blocks-4
+{
+    margin: calc(var(--gap20)*2) 0;
+
+    display: grid;
+    grid-gap: var(--gap20);
+    grid-template-rows: auto repeat(2, 1fr);
+    grid-template-columns: 1.5fr repeat(3,1fr);
+    grid-template-areas: 
+        'blocks_4-aside blocks_4-title blocks_4-title blocks_4-title'
+        'blocks_4-aside blocks_4-1 blocks_4-2 blocks_4-3'
+        'blocks_4-aside blocks_4-4 blocks_4-5 blocks_4-6';
+}
+
+.blocks-4 .title
+{
+    grid-area: blocks_4-title;
+    margin: var(--gap10) 0;
+}
+
+
+.blocks-4 .article:nth-child(1)
+{
+    grid-area: blocks_4-1;
+}
+
+.blocks-4 .article:nth-child(1)
+{
+    grid-area: blocks_4-2;
+}
+
+.blocks-4 .article:nth-child(1)
+{
+    grid-area: blocks_4-3;
+}
+
+.blocks-4 .article:nth-child(1)
+{
+    grid-area: blocks_4-4;
+}
+
+.blocks-4 .article:nth-child(1)
+{
+    grid-area: blocks_4-5;
+}
+
+.blocks-4 .article:nth-child(1)
+{
+    grid-area: blocks_4-6;
+}
+
+.blocks-4 aside
+{
+    grid-area: blocks_4-aside;
+    
+    background: var(--white);
+    padding: 0 var(--gap10);
+}
+
+.blocks-4 aside .title
+{
+    margin-bottom: var(--gap20)
+}
+
+.blocks-4 aside .article
+{
+    border-top: 1px solid var(--gray-light);
+}
+
+.blocks-4 aside .article h1
+{
+    margin-top: 0;
+}
+
+.blocks-4 aside .article time
+{
+    margin: var(--gap10) 0;
+}
+
+.blocks-4 aside .article:nth-of-type(1)
+{
+    border: none;
+    margin-top: var(--gap10);
+}
+
+/* якщо потрібно якийсь допис разом з фоткою */
+.blocks-4 aside .picture
+{
+    margin-bottom: var(--gap10);
+}

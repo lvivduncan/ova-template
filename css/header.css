@@ -53,33 +53,25 @@
     color: var(--second);
 }
 
-/*
-TODO: search button
-*/
-/* right block*/
-#search
-{
-
-}
-
 #search form
 {
-    display: flex;
-    gap: var(--gap5);
+    position: relative;
 }
 
 #search input
 {
     width: 100%;
-    padding: var(--gap5) var(--gap10);
+    padding: var(--gap15) calc(var(--gap20)*1.5) var(--gap15) var(--gap20);
     outline: none;
     border: none;
-    border-right: 1px solid var(--gray-light);
+    border: 2px dotted var(--form-bg);
+    font-family: inherit;
 }
+
 
 #search input:focus
 {
-    border-color: var(--first);
+    border-style: solid;
 }
 
 #search button
@@ -88,11 +80,19 @@ TODO: search button
     border: none;
     background: none;
     padding: 2px;
+    position: absolute;
+    right: 10px;
+    top: 15px;
 }
 
 #search svg
 {
     width: 16px;
     height: 16px;
-    fill: var(--first);
+    fill: var(--form-bg);
+}
+
+::placeholder
+{
+    color: var(--form-bg);
 }

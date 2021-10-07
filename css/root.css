@@ -38,6 +38,9 @@ body
 
     --body-bg: #f5f5f5;
     --body-color: #727272;
+
+    --top--bg: #fafafd;
+    --form-bg: #efefef;
 }
 
 body
@@ -197,10 +200,31 @@ picture source
     left: 0;
 }
 
+/* вирівнювання по правому краю */
+.title-right
+{
+    text-align: right;
+    padding: 0 var(--gap10) 0 0;
+}
 
+.title-right::before
+{
+    left: auto;
+    right: 0;
+}
 
 /* мітки */
 .tags
 {
     position: relative;
 }
+
+
+/* TODO: buttons */
+
+/* TODO: tags */
+
+/* TODO: forms */
+
+/* TODO: pagination */
+

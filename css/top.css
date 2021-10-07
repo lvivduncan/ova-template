@@ -1,6 +1,6 @@
 #top
 {
-    background: var(--add);
+    background: var(--top--bg);
 }
 
 #top .wrapper
@@ -8,6 +8,18 @@
     display: flex;
     align-items: center;
     height: 42px;
+}
+
+#weather
+{
+    display: inline-flex;
+    align-content: center;
+    gap: 5px;
+}
+
+#weather p
+{
+    margin: 0;
 }
 
 /* іконки */
@@ -20,8 +32,9 @@
 /* погода */
 #weather svg
 {
-    /* fill: var(--gold); */
     fill: var(--body-color);
+    position: relative;
+    top: 6px;
 }
 
 /* логін-панель */
@@ -104,4 +117,9 @@
     height: 100%;
     align-items: center;
     gap: var(--gap10);
+}
+
+#top time svg
+{
+    fill: var(--add)
 }
