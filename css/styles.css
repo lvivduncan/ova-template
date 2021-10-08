@@ -42,5 +42,6 @@
 /* 4 колонки: заголовок і 2 артикля під ним */
 @import url('./blocks-5.css');
 
-/* todo */
 @import url('./footer.css');
+
+@import url('./copy.css');

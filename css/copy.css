@@ -1,0 +1,12 @@
+#copy
+{
+    background: var(--first);
+    color: var(--white);
+    text-align: center;
+    padding: var(--gap10) 0;
+}
+
+#copy p
+{
+    margin: 0;
+}
