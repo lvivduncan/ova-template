@@ -1,0 +1,152 @@
+#comments
+{
+    margin: var(--gap20) 0;
+    padding: var(--gap20);
+}
+
+#comments .title
+{
+    margin-left: 0;
+}
+
+#comments form
+{
+    display: flex;
+    flex-direction: column;
+}
+
+/* форма швидкого коментаря */
+#comments li form
+{
+    margin: var(--gap20) 0;
+}
+
+#comments label
+{
+    cursor: pointer;
+}
+
+/* форма швидкого коментаря */
+#comments li form label
+{
+    color: var(--first);
+}
+
+#comments input,
+#comments textarea,
+#comments button
+{
+    margin: var(--gap5) 0;
+    width: 100%;
+    padding: var(--gap15) calc(var(--gap20)*1.5) var(--gap15) var(--gap20);
+    outline: none;
+    border: none;
+    border: 2px dotted var(--form-bg);
+    font-family: inherit;
+    font-size: inherit;
+    transition: .5s;
+}
+
+/* форма швидкого коментаря */
+#comments li input,
+#comments li textarea
+{
+    border-color: var(--first);
+}
+
+#comments textarea
+{
+    resize: none;
+    height: 120px;
+}
+
+#comments input:focus,
+#comments textarea:focus,
+#comments button:focus
+{
+    border-style: solid;
+}
+
+#comments button
+{
+    cursor: pointer;
+    color: var(--button-color);
+    background: var(--button-bg);
+    border: none;
+}
+
+#comments button:hover
+{
+    color: var(--button-color-hover);
+    background: var(--button-bg-hover);
+}
+
+/* деревовидні коментарі */
+#comments ol
+{
+    margin: var(--gap20) 0;
+    counter-reset: list;
+}
+
+#comments li
+{
+    display: block;
+    position: relative;
+}
+
+#comments ol li:before
+{
+    counter-increment: list;
+    content: counter(list) ". ";
+    position: absolute;
+}
+
+#comments ul
+{
+    margin-left: var(--gap20);
+}
+
+#comments ul li::before
+{
+    content: none;
+}
+
+#comments li h2
+{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#comments ol li h2
+{
+    padding-left: var(--gap20);
+}
+
+#comments ul li h2
+{
+    padding-left: 0;
+}
+
+#comments li p
+{
+    margin: 0 0 var(--gap20);
+}
+
+.quick-comment::before
+{
+    content: 'Прокоментувати?';
+    font-weight: 300;
+    font-size: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.quick-comment.quick-comment.active::before
+{
+    content: 'Прокоментувати!';
+    color: var(--first);
+    font-weight: 500;
+}
