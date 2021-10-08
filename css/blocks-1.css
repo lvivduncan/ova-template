@@ -60,7 +60,11 @@
 {
     grid-area: blocks_1-aside;
 
-    background: var(--white);
-    padding: var(--gap10);
+    /* background: var(--white); */
+    /* padding: var(--gap10); */
 }
 
+/* .blocks-1 aside .title
+{
+    margin: var(--gap10) 0 var(--gap20);
+} */

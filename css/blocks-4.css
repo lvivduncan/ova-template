@@ -57,19 +57,19 @@
 {
     grid-area: blocks_4-aside;
     
-    background: var(--white);
-    padding: 0 var(--gap10);
+/*     background: var(--white);
+    padding: 0 var(--gap10); */
 }
 
-.blocks-4 aside .title
+/* .blocks-4 aside .title
 {
     margin-bottom: var(--gap20)
-}
+} */
 
-.blocks-4 aside .article
+/* .blocks-4 aside .article
 {
     border-top: 1px solid var(--gray-light);
-}
+} */
 
 .blocks-4 aside .article h1
 {
@@ -79,6 +79,13 @@
 .blocks-4 aside .article time
 {
     margin: var(--gap10) 0;
+    transition: .5s;
+}
+
+/* сунемо годину вправо */
+.blocks-4 aside .article-table:hover time
+{
+    transform: translateX(5px);
 }
 
 .blocks-4 aside .article:nth-of-type(1)

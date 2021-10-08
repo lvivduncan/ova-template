@@ -39,10 +39,36 @@ body
     --body-bg: #f5f5f5;
     --body-color: #727272;
 
-    --top--bg: #fafafd;
+    --top-bg: #fafafd;
     --form-bg: #efefef;
 
     --hot-color: #464646;
+
+    --breadcrumbs-bg: #fff;
+
+    --main-bg: #fff;
+
+
+    --tags-color: #464646;
+    --tags-bg: #f5f5f5;
+    --tags-color-hover: #f5f5f5;
+    --tags-bg-hover: #464646;
+
+
+    --pagination-color: #464646;
+    --pagination-bg: #fff;
+    --pagination-color-hover: #fff;
+    --pagination-bg-hover: #464646;
+
+
+    --box-shadow: 0 0 calc(var(--gap20)*2) rgba(0, 0, 0, .1);
+
+
+    --button-bg: #f5f5f5;
+    --button-color: #464646;
+    --button-bg-hover: #464646;
+    --button-color-hover: #f5f5f5;
+
 }
 
 body
@@ -56,12 +82,12 @@ body
 p
 {
     line-height: 1.6;
-    margin: 0 0 20px;
+    margin: 0 0 var(--gap20);
 }
 
 h1,h2,h3,h4,h5
 {
-    margin: 0 0 20px;
+    margin: 0 0 var(--gap20);
 }
 
 h1
@@ -131,7 +157,8 @@ a:focus
 
 @media(max-width:1240px)
 {
-    .wrapper{
+    .wrapper
+    {
         width: 95%;
     }
 }
@@ -185,58 +212,4 @@ picture source
 }
 /* 19:6 */
 
-
-
-/* заголовки */
-.title
-{
-    position: relative;
-    padding: 0 0 0 var(--gap10);
-    margin: 0 0 var(--gap20);
-    font-size: 24px!important;
-    color: var(--first);
-    font-weight: 500!important;
-    text-transform: uppercase;
-    line-height: 1;
-}
-
-.title::before
-{
-    content: '';
-    display: inline-block;
-    height: 100%;
-    width: 3px;
-    background: var(--second);
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-/* вирівнювання по правому краю */
-.title-right
-{
-    text-align: right;
-    padding: 0 var(--gap10) 0 0;
-}
-
-.title-right::before
-{
-    left: auto;
-    right: 0;
-}
-
-/* мітки */
-.tags
-{
-    position: relative;
-}
-
-
-/* TODO: buttons */
-
-/* TODO: tags */
-
 /* TODO: forms */
-
-/* TODO: pagination */
-

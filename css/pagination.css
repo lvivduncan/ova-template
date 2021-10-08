@@ -1,0 +1,36 @@
+.pagination
+{
+    margin: var(--gap20) auto;
+    display: flex;
+    gap: var(--gap10);
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination li
+{
+    display: block;
+}
+
+.pagination li a
+{
+    display: block;
+    text-decoration: none;
+    padding: var(--gap10) var(--gap15);
+    color: var(--pagination-color);
+    background: var(--pagination-bg);
+    box-shadow: var(--box-shadow);
+}
+
+.pagination li.active a
+{
+    color: var(--pagination-color-hover);
+    background: var(--pagination-bg-hover);
+    cursor: text;
+}
+
+.pagination li a:hover
+{
+    color: var(--pagination-color-hover);
+    background: var(--pagination-bg-hover);
+}

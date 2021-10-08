@@ -1,0 +1,38 @@
+
+/* заголовки */
+.title
+{
+    position: relative;
+    padding: 0 0 0 var(--gap10);
+    margin: 0 0 var(--gap20);
+    font-size: 21px!important;
+    color: var(--first);
+    font-weight: 500!important;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.title::before
+{
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 3px;
+    background: var(--second);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* вирівнювання по правому краю */
+.title-right
+{
+    text-align: right;
+    padding: 0 var(--gap10) 0 0;
+}
+
+.title-right::before
+{
+    left: auto;
+    right: 0;
+}

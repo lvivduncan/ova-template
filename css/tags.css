@@ -1,0 +1,39 @@
+/* мітки */
+.tags
+{
+    position: relative;
+}
+
+/* кілька міток */
+.tags a
+{
+    padding: var(--gap10) var(--gap15);
+    text-decoration: none;
+    color: var(--tags-color)!important;
+    background: var(--tags-bg)!important;
+    display: inline-block;
+    transition: .5s;
+}
+
+.tags a:hover,
+.tags a:focus
+{
+    color: var(--tags-color-hover)!important;
+    background: var(--tags-bg-hover)!important;
+}
+
+/* 1 мітка */
+.tags a.tag
+{
+    background: var(--second)!important;
+    color: var(--white)!important;
+    position: absolute;
+    top: var(--gap20);
+    left: var(--gap20);
+    z-index: 1;
+}
+
+article:hover .tags a.tag
+{
+    transform: translateX(10px);
+}

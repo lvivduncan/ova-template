@@ -3,10 +3,27 @@
 @import url('./header.css');
 @import url('./hot.css');
 
+/* крихти на внутрішніх */
+@import url('./breadcrumbs.css');
+
+/* бокова смуга */
+@import url('./aside.css');
+
+/* внутрішня */
+@import url('./page.css');
+
+@import url('./pagination.css');
+
+@import url('./tags.css');
+
+@import url('./title.css');
+
+@import url('./buttons.css');
+
 /* single anounce */
 @import url('./article.css');
 
-/* та хез як їх називати, складна структура */
+/* хез як їх називати, складна структура */
 
 /* 1 велике фото, 3 блоки біля нього справа та знизу, і довгий сайдбар справа */
 @import url('./blocks-1.css');
@@ -22,3 +39,6 @@
 
 /* 4 колонки: заголовок і 2 артикля під ним */
 @import url('./blocks-5.css');
+
+/* todo */
+@import url('./footer.css');

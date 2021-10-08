@@ -1,0 +1,59 @@
+/*
+додаткового врапера немає!
+*/
+
+#breadcrumbs
+{
+    box-shadow: var(--box-shadow);
+    padding: var(--gap20);
+    background: var(--breadcrumbs-bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 1200px;
+    margin: var(--gap20) auto;
+}
+
+@media(max-width:1240px)
+{
+    #breadcrumbs
+    {
+        width: 95%;
+    }
+}
+
+#breadcrumbs .title
+{
+    margin: 0;
+}
+
+#breadcrumbs ol
+{
+    display: inline-block;
+}
+
+#breadcrumbs li
+{
+    display: inline-block;
+}
+
+#breadcrumbs li::before
+{
+    content: '';
+    padding-right: var(--gap15);
+    margin-right: var(--gap5);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' enable-background='new 0 0 24 24' viewBox='0 0 24 24' fill='currentColor'%3E%3Crect fill='none'/%3E%3Cpolygon points='17.59,18 19,16.59 14.42,12 19,7.41 17.59,6 11.59,12'/%3E%3Cpolygon points='11,18 12.41,16.59 7.83,12 12.41,7.41 11,6 5,12'/%3E%3C/svg%3E");
+    position: relative;
+    top: 2px;
+}
+
+#breadcrumbs li:first-child:before
+{
+    display: none;
+}
+
+#breadcrumbs span
+{
+    color: var(--second);
+}

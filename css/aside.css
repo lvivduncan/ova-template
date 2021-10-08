@@ -1,0 +1,37 @@
+/*
+однакові стилі для всіх бокових колонок
+*/
+aside
+{
+    background: var(--white);
+    padding: 0 var(--gap10);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* якщо є заголовок: */
+aside .title
+{
+    margin: var(--gap10) 0 var(--gap20)!important;
+    align-self: flex-start;
+}
+
+/* якщо заголовок є і він має бути по правому краю: */
+aside .title.title-right
+{
+    /* margin: var(--gap10) 0 var(--gap20)!important; */
+    align-self: flex-end;
+}
+
+aside .article:nth-of-type(1)
+{
+    border: none;
+    padding-top: 0;
+    margin-top: var(--gap10);
+}
+
+aside .article time
+{
+    margin: var(--gap15) 0;
+}

@@ -1,0 +1,21 @@
+.button
+{
+    display: inline-flex;
+    padding: var(--gap10) var(--gap15);
+    color: var(--button-color);
+    background: var(--button-bg);
+    text-decoration: none;
+}
+
+.button:hover,
+.button:focus
+{
+    color: var(--button-color-hover);
+    background: var(--button-bg-hover);
+}
+
+.button-bottom
+{
+    margin-top: auto;
+    margin-bottom: var(--gap20);
+}
