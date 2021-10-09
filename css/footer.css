@@ -22,12 +22,6 @@
     text-decoration: none;
 }
 
-/* #footer a:hover,
-#footer a:focus
-{
-    text-decoration: underline;
-} */
-
 #footer .wrapper
 {
     display: grid;
@@ -44,7 +38,6 @@
 #footer nav li
 {
     display: block;
-    /* margin: var(--gap10) 0; */
 }
 
 #footer nav li a
@@ -75,7 +68,7 @@
 }
 
 
-/**/
+/* соцгрупи з назвами */
 #footer .social li
 {
     display: block;
@@ -117,7 +110,7 @@
 {
     resize: none;
     width: 100%;
-    height: 70px;
+    height: 80px;
     margin: var(--gap5) 0;
     padding: var(--gap10);
     outline: none;
