@@ -21,6 +21,8 @@
     width: 200px;
 }
 
+
+
 /* menu */
 #nav
 {
@@ -35,6 +37,7 @@
 #nav li
 {
     display: inline-block;
+    position: relative;
 }
 
 #nav li a
@@ -51,6 +54,58 @@
 #nav li a:hover
 {
     color: var(--second);
+}
+
+/* dropdown */
+#nav li ul
+{
+    position: absolute;
+    min-width: 260px;
+    left: calc(50% - 130px);
+    border: 1px solid var(--add);
+    padding: var(--gap10);
+    box-shadow: var(--box-shadow);
+    background: var(--white);
+    z-index: -1;
+    opacity: 0;
+    transition: .5s;
+}
+
+#nav li.active ul
+{
+    opacity: 1;
+    z-index: 1;
+}
+
+#nav li ul li
+{
+    display: block;
+    padding-top: var(--gap10);
+    margin-top: var(--gap10);
+    border-top: 1px solid var(--add);
+    line-height: 1.5;
+}
+
+#nav li ul a
+{
+    text-transform: none;
+    font-weight: 400;
+    text-align: center;
+    color: var(--first);
+}
+
+#nav li ul a:hover
+{
+    background: var(--add);
+    color: var(--first);
+}
+
+/* ховаємо горизонтальну риску */
+#nav li ul li:first-child
+{
+    padding-top: 0;
+    margin-top: 0;
+    border-top: 0;    
 }
 
 #search form
