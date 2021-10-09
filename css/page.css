@@ -11,6 +11,7 @@
 #page main
 {
     background: var(--main-bg);
+    box-shadow: var(--box-shadow);
 }
 
 #page main picture:first-child,

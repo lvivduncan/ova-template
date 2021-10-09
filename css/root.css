@@ -232,4 +232,14 @@ picture source
 
 /* TODO: posts.html */
 
-/* TODO: archive.html */
+/* малий рекламний блок */
+.insert-image
+{
+    min-height: 80px;
+    
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--box-shadow);
+}

@@ -5,6 +5,8 @@
     color: var(--button-color);
     background: var(--button-bg);
     text-decoration: none;
+    margin-top: var(--gap20);
+    margin-bottom: var(--gap20);
 }
 
 .button:hover,
@@ -17,5 +19,5 @@
 .button-bottom
 {
     margin-top: auto;
-    margin-bottom: var(--gap20);
+    /* margin-bottom: var(--gap20); */
 }

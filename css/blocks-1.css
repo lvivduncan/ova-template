@@ -22,13 +22,7 @@
 {
     grid-area: blocks_1-insert;
 
-    height: 80px;
-    
-    /* temp */
-    background: var(--white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    box-shadow: none;
 }
 
 .blocks-1 .article:nth-of-type(1)

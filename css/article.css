@@ -7,6 +7,7 @@
 
     /***/
     background: var(--white);
+    box-shadow: var(--box-shadow);
 }
 
 .article picture
@@ -124,6 +125,7 @@ aside .article
 {
     border-top: 1px solid var(--gray-light);
     padding-top: var(--gap15);
+    box-shadow: none;
 }
 
 aside .article:nth-of-type(1)
@@ -146,6 +148,7 @@ aside .article > h1
     display: flex;
     gap: var(--gap20);
     align-items: flex-start;
+    /* box-shadow: none; */
 }
 
 .article-table time
@@ -167,4 +170,45 @@ aside .article > h1
 {
     color: var(--second);
     font-weight: 800;
+}
+
+/* 
+модифікатор: сторінка з постами
+фото зліва, справа заголовок, дата і анонс
+*/
+.article-post
+{
+    display: grid;
+    grid-template-columns: 1.5fr 3fr;
+    grid-template-rows: repeat(2,auto) 1fr;
+    grid-gap: var(--gap10) var(--gap20);
+    grid-template-areas: 
+        'article-post-picture article-post-h1'
+        'article-post-picture article-post-time'
+        'article-post-picture article-post-p';
+    margin: var(--gap20) 0;
+    box-shadow: var(--box-shadow);
+}
+
+.article-post .picture
+{
+    grid-area: article-post-picture;
+}
+
+.article-post h1
+{
+    grid-area: article-post-h1;
+    margin: var(--gap15) var(--gap20) 0 0;
+}
+
+.article-post time
+{
+    grid-area: article-post-time;
+    margin: 0 var(--gap20) 0 0;
+}
+
+.article-post p
+{
+    grid-area: article-post-p;
+    margin: 0 var(--gap20) var(--gap20) 0;
 }

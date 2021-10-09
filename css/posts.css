@@ -1,0 +1,8 @@
+#posts
+{
+    margin-top: var(--gap20);
+    margin-bottom: var(--gap20);
+    display: grid;
+    grid-template-columns: 3fr 1.25fr;
+    grid-gap: var(--gap20);
+}
