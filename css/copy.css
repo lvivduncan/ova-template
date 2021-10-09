@@ -1,6 +1,6 @@
 #copy
 {
-    background: var(--first);
+    background: var(--copy-bg);
     color: var(--copy-color);
     text-align: center;
     padding: var(--gap10) 0;
