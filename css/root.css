@@ -77,7 +77,7 @@ body
     --calendar-bg-hover: var(--button-bg-hover);
     --calendar-color-hover: var(--button-color-hover);
 
-    --copy-color: var(--body-color);
+    --copy-color: var(--footer-color);
     --copy-bg: #000;
 }
 
