@@ -85,6 +85,42 @@
     color: var(--second);
 }
 
+#page main ul,
+#page main ol
+{
+    margin: var(--gap20) 0 var(--gap20) calc(var(--gap20)*2);
+}
+
+#page main li
+{
+    margin: var(--gap10) 0;
+}
+
+#page main blockquote
+{
+    margin: var(--gap20);
+}
+
+/* цитата */
+#page main blockquote p
+{
+    margin: 0 0 var(--gap10);
+    border-left: 4px solid var(--second);
+    padding-left: var(--gap10);
+    font-style: italic;
+}
+
+/* автор */
+#page main blockquote span
+{
+    display: block;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--first);
+}
+
 /* анонси */
 #page aside
 {

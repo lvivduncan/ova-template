@@ -1,7 +1,7 @@
 #copy
 {
     background: var(--first);
-    color: var(--white);
+    color: var(--copy-color);
     text-align: center;
     padding: var(--gap10) 0;
 }
@@ -13,8 +13,7 @@
 
 #copy a
 {
-    color: var(--white);
-    /* text-decoration: underline; */
+    color: var(--copy-color);
 }
 
 #copy a:hover,

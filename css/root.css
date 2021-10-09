@@ -71,6 +71,13 @@ body
 
     --footer-bg: #464646;
     --footer-color: #f5f5f5;
+
+    --calendar-bg: var(--body-bg);
+    --calendar-color: var(--body-color);
+    --calendar-bg-hover: var(--button-bg-hover);
+    --calendar-color-hover: var(--button-color-hover);
+
+    --copy-color: var(--body-color);
 }
 
 body

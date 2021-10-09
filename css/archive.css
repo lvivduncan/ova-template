@@ -1,0 +1,134 @@
+.calendar-years
+{
+    text-align: center;
+    margin: calc(var(--gap20)*2) 0 var(--gap20);
+}
+
+.calendar-years nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar-years a
+{
+    line-height: .5;
+}
+
+.calendar-years span
+{
+    font-weight: 800;
+}
+
+.calendar-years svg
+{
+    width: 22px;
+    height: 22px;
+    fill: var(--calendar-color);
+}
+
+.calendar
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: var(--gap20);
+    padding: 0 0 var(--gap20);
+}
+
+@media(max-width:996px)
+{
+    .calendar
+    {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media(max-width:776px)
+{
+    .calendar
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:550px)
+{
+    .calendar
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
+.calendar article
+{
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+}
+
+.calendar a
+{
+    text-decoration: none;
+}
+
+.calendar .month
+{
+    text-align: center;
+    margin: 0 0 5px;
+}
+
+.calendar .month a
+{
+    display: block;
+    padding: var(--gap15);
+    font-size: 15px;
+    color: var(--second);
+}
+
+.calendar .month a:hover,
+.calendar .month a:focus
+{
+    color: var(--first);
+}
+
+.calendar .weeks
+{
+    color: var(--first);
+    text-transform: uppercase;
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-gap: 2px;
+    text-align: center;
+}
+
+.calendar .days
+{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-gap: 1px;
+    text-align: center;
+}
+
+.calendar .days a, 
+.calendar .weeks span
+{
+    padding: var(--gap5) var(--gap10);
+}
+
+.calendar .days a
+{
+    background: var(--calendar-bg);
+    color: var(--calendar-color);
+    transition: .5s;
+}
+
+.calendar .days a:hover,
+.calendar .days a:focus,
+.calendar .days a.active
+{
+    background: var(--calendar-bg-hover);
+    color: var(--calendar-color-hover);
+    transition: .5s;
+}
+
