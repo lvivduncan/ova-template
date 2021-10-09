@@ -10,3 +10,15 @@
 {
     margin: 0;
 }
+
+#copy a
+{
+    color: var(--white);
+    /* text-decoration: underline; */
+}
+
+#copy a:hover,
+#copy a:focus
+{
+    text-decoration: none;
+}
