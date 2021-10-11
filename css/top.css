@@ -10,11 +10,44 @@
     height: 42px;
 }
 
+@media(max-width:600px)
+{
+    #top .wrapper
+    {
+        text-align: center;
+        height: auto;
+        /* flex-wrap: wrap; */
+        padding: var(--gap10) 0;
+        justify-content: space-between;
+    }
+
+    #top i
+    {
+        display: none;
+    }
+}
+
+@media(max-width:350px)
+{
+    #top .wrapper
+    {
+        display: block;
+    }
+}
+
 #weather
 {
     display: inline-flex;
     align-content: center;
     gap: 5px;
+}
+
+@media(max-width:450px)
+{
+    #weather
+    {
+        display: none;
+    }
 }
 
 #weather p
@@ -41,6 +74,14 @@
 #login
 {
     display: inline-block;
+}
+
+@media(max-width:350px)
+{
+    #login
+    {
+        margin-bottom: var(--gap20)
+    }
 }
 
 #login li
@@ -90,6 +131,14 @@
     margin-right: var(--gap10);
 }
 
+@media(max-width:600px)
+{
+    #top .social
+    {
+        margin: 0;
+    }    
+}
+
 #top .social svg
 {
     fill: var(--body-color);
@@ -117,6 +166,14 @@
     height: 100%;
     align-items: center;
     gap: var(--gap10);
+}
+
+@media(max-width:620px)
+{
+    #top time
+    {
+        display: none;
+    }
 }
 
 #top time svg

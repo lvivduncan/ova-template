@@ -8,13 +8,70 @@
 
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 80px auto 1fr;
-
     grid-gap: var(--gap20);
     grid-template-areas: 
         'blocks_1-1 blocks_1-1 blocks_1-insert blocks_1-aside'
         'blocks_1-1 blocks_1-1 blocks_1-2 blocks_1-aside'
         'blocks_1-3 blocks_1-4 blocks_1-5 blocks_1-aside';
+}
+
+/* 3 + 1 */
+@media(max-width:996px)
+{
+    .blocks-1
+    {
+        grid-template-columns: repeat(2,1.5fr) 1fr;
+        grid-template-areas: 
+            'blocks_1-1 blocks_1-1 blocks_1-aside'
+            'blocks_1-insert blocks_1-insert blocks_1-aside'
+            'blocks_1-2 blocks_1-3 blocks_1-aside'
+            'blocks_1-4 blocks_1-5 blocks_1-aside'
+    }
+}
+
+@media(max-width:776px)
+{
+    .blocks-1
+    {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media(max-width:600px)
+{
+    .blocks-1
+    {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,auto) 1fr;
+        grid-template-areas: 
+            'blocks_1-1 blocks_1-1'
+            'blocks_1-insert blocks_1-insert'
+            'blocks_1-2 blocks_1-3'
+            'blocks_1-4 blocks_1-5'
+            'blocks_1-aside blocks_1-aside'
+    }
+
+    .blocks-1 aside
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: var(--gap20);
+        align-items: start;
+    }
+
+    /* якщо є заголовок -- розтягуємо */
+    .blocks-1 aside .title
+    {
+        grid-column: 1/-1;
+    }
+
+    .blocks-1 aside article
+    {
+        margin: 0!important;
+        padding: 0!important;
+        border: none!important;
+    }
+    
 }
 
 /* малий рекламний блок */
@@ -53,12 +110,16 @@
 .blocks-1 aside
 {
     grid-area: blocks_1-aside;
-
-    /* background: var(--white); */
-    /* padding: var(--gap10); */
 }
 
-/* .blocks-1 aside .title
+/* відміна назв для асайда */
+.blocks-1 aside .article:nth-of-type(1),
+.blocks-1 aside .article:nth-of-type(2),
+.blocks-1 aside .article:nth-of-type(3),
+.blocks-1 aside .article:nth-of-type(4),
+.blocks-1 aside .article:nth-of-type(5)
 {
-    margin: var(--gap10) 0 var(--gap20);
-} */
+    grid-area: auto;
+}
+
+/* в асайді тільки 3 артикля! */

@@ -1,5 +1,5 @@
 /* 
- * 4 колонки: заголовок і 2 артикля під ним 
+ * 4 колонки: заголовок і 3 артикля під ним 
  */
 
 .blocks-5
@@ -8,8 +8,135 @@
 
     display: grid;
     grid-gap: var(--gap20);
-    grid-template-rows: auto 1fr 1fr;
     grid-template-columns: repeat(4,1fr);
+}
+
+@media(max-width:776px)
+{
+    .blocks-5
+    {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+            'blocks-5_title_1 blocks-5_title_2'
+            'blocks-5_1 blocks-5_2'
+            'blocks-5_5 blocks-5_6'
+            'blocks-5_9 blocks-5_10'
+
+            'blocks-5_title_3 blocks-5_title_4'
+            'blocks-5_3 blocks-5_4'
+            'blocks-5_7 blocks-5_8'
+            'blocks-5_11 blocks-5_12'
+    }
+
+    /* 4 заголовка */
+    .blocks-5 .title:nth-of-type(1)
+    {
+        grid-area: blocks-5_title_1;
+    }
+
+    .blocks-5 .title:nth-of-type(2)
+    {
+        grid-area: blocks-5_title_2;
+    }
+
+    .blocks-5 .title:nth-of-type(3)
+    {
+        grid-area: blocks-5_title_3;
+    }
+
+    .blocks-5 .title:nth-of-type(4)
+    {
+        grid-area: blocks-5_title_4;
+    }
+
+    /* 12 артиклів */
+    .blocks-5 .article:nth-of-type(1)
+    {
+        grid-area: blocks-5_1;
+    }
+
+    .blocks-5 .article:nth-of-type(2)
+    {
+        grid-area: blocks-5_2
+    }
+
+    .blocks-5 .article:nth-of-type(3)
+    {
+        grid-area: blocks-5_3
+    }
+
+    .blocks-5 .article:nth-of-type(4)
+    {
+        grid-area: blocks-5_4
+    }
+
+    .blocks-5 .article:nth-of-type(5)
+    {
+        grid-area: blocks-5_5
+    }
+
+    .blocks-5 .article:nth-of-type(6)
+    {
+        grid-area: blocks-5_6
+    }
+
+    .blocks-5 .article:nth-of-type(7)
+    {
+        grid-area: blocks-5_7
+    }
+
+    .blocks-5 .article:nth-of-type(8)
+    {
+        grid-area: blocks-5_8
+    }
+
+    .blocks-5 .article:nth-of-type(9)
+    {
+        grid-area: blocks-5_9
+    }
+
+    .blocks-5 .article:nth-of-type(10)
+    {
+        grid-area: blocks-5_10;
+    }
+
+    .blocks-5 .article:nth-of-type(11)
+    {
+        grid-area: blocks-5_11;
+    }
+
+    .blocks-5 .article:nth-of-type(12)
+    {
+        grid-area: blocks-5_12;
+    }
+}
+
+@media(max-width:450px)
+{
+    .blocks-5
+    {
+        grid-template-columns:1fr;
+        grid-template-areas: 
+            'blocks-5_title_1'
+            'blocks-5_1'
+            'blocks-5_5'
+            'blocks-5_9'
+
+            'blocks-5_title_2'
+            'blocks-5_2'
+            'blocks-5_6'
+            'blocks-5_10'
+
+            'blocks-5_title_3'
+            'blocks-5_3'
+            'blocks-5_7'
+            'blocks-5_11'
+
+            'blocks-5_title_4'
+            'blocks-5_4'
+            'blocks-5_8'
+            'blocks-5_12'
+    }
 }
 
 .blocks-5 .title

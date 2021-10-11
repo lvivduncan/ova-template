@@ -15,6 +15,30 @@
         'blocks-2-3 blocks-2-3 blocks-2-4 blocks-2-4 blocks-2-5 blocks-2-5';
 }
 
+@media(max-width:776px)
+{
+    .blocks-2
+    {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+            'blocks-2-1 blocks-2-2'
+            'blocks-2-3 blocks-2-4';
+    }
+}
+
+@media(max-width:450px)
+{
+    .blocks-2
+    {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            'blocks-2-1'
+            'blocks-2-2'
+            'blocks-2-3'
+            'blocks-2-4';
+    }
+}
+
 .blocks-2 .article:nth-child(1)
 {
     grid-area: blocks-2-1;
@@ -38,4 +62,12 @@
 .blocks-2 .article:nth-child(5)
 {
     grid-area: blocks-2-5;
+}
+
+@media(max-width:776px)
+{
+    .blocks-2 .article:nth-child(5)
+    {
+        display: none;
+    }    
 }

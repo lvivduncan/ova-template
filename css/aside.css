@@ -18,6 +18,14 @@ aside .title
     align-self: flex-start;
 }
 
+@media(max-width:600px)
+{
+    aside .title
+    {
+        margin-bottom: 0!important;
+    }
+}
+
 /* якщо заголовок є і він має бути по правому краю: */
 aside .title.title-right
 {

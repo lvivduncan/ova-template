@@ -11,4 +11,19 @@
     grid-template-columns: repeat(3,1fr) 1.5fr;
 }
 
+@media(max-width:996px)
+{
+    .blocks-3
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
 
+@media(max-width:600px)
+{
+    .blocks-3
+    {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 1fr;
+    }
+}
