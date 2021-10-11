@@ -123,6 +123,7 @@
 #comments ol li h2
 {
     padding-left: var(--gap20);
+    margin: 0 0 var(--gap10);
 }
 
 #comments ul li h2
@@ -133,6 +134,7 @@
 #comments li p
 {
     margin: 0 0 var(--gap20);
+    font-style: italic;
 }
 
 .quick-comment::before
