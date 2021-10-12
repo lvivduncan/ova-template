@@ -1,4 +1,7 @@
 // 9-10-2021
+
+const body = document.getElementsByTagName('body')[0];
+
 {
     const nav = document.querySelectorAll('#nav > ul > li');
     for(let i = 0; i < nav.length; i++){
@@ -16,6 +19,35 @@
         });
     }
 }
+
+
+// search
+{
+    const search = document.querySelector('#search form');
+    const button = document.querySelector('#search .search');
+
+    button.addEventListener('click', () => {
+
+        search.classList.toggle('active');
+        button.classList.toggle('active');
+        body.classList.toggle('active');
+    });
+}
+
+
+// menu
+{
+    const nav = document.querySelector('#nav ul');
+    const button = document.querySelector('#nav > svg');
+
+    button.addEventListener('click', () => {
+
+        nav.classList.toggle('active');
+        button.classList.toggle('active');
+        body.classList.toggle('active');
+    });
+}
+
 
 // news change
 {
@@ -40,4 +72,4 @@ function isTouchDevice() {
 
 
 
-// 11-10-2021
+// 12-10-2021

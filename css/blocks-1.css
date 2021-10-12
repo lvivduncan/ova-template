@@ -74,6 +74,22 @@
     
 }
 
+@media(max-width:450px)
+{
+    .blocks-1
+    {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            'blocks_1-1'
+            'blocks_1-insert'
+            'blocks_1-2'
+            'blocks_1-3'
+            'blocks_1-4'
+            'blocks_1-5'
+            'blocks_1-aside'
+    }
+}
+
 /* малий рекламний блок */
 .blocks-1 .insert-image
 {

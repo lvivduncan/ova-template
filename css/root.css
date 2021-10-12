@@ -89,6 +89,13 @@ body
     background: var(--body-bg);
 }
 
+/* лочимо боді */
+body.active
+{
+    position: fixed;
+    overflow: hidden;
+}
+
 p
 {
     line-height: 1.6;
