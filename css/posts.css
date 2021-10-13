@@ -6,3 +6,33 @@
     grid-template-columns: 3fr 1.25fr;
     grid-gap: var(--gap20);
 }
+
+@media(max-width:776px)
+{
+    #posts
+    {
+        grid-template-columns: 1fr;
+    }
+
+    #posts aside
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: var(--gap10);
+        align-items: flex-start;
+    }
+
+    #posts aside .title
+    {
+        grid-column: 1/-1;
+    }
+
+    #posts aside .article
+    {
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+/* TODO: aside padding-top */

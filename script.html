@@ -9,19 +9,22 @@
         <link rel="stylesheet" href="css/styles.css">
 
         <!-- Автослайдер на 4/3/2/1 елементи -->
-        <link rel="stylesheet" href="https://lvivduncan.github.io/levus-horizontal-scroll/css/levus-horizontal-scroll.css">
+        <link rel="stylesheet" href="css/levus-horizontal-scroll.css">
 
         <!-- Кнопка "догори" -->
-        <link rel="stylesheet" href="https://lvivduncan.github.io/levus-up/css/levus-up.css">
+        <link rel="stylesheet" href="css/levus-up.css">
 
         <!-- Шарбатони -->
-        <link rel="stylesheet" href="https://lvivduncan.github.io/social-buttons/css/styles.css">
+        <link rel="stylesheet" href="css/share-buttons.css">
 
         <!-- Тачслайдер з мініатюрами та лайтбоксом -->
-        <link rel="stylesheet" href="https://lvivduncan.github.io/levus-touch-gallery/css/levus-touch-gallery.css">
+        <link rel="stylesheet" href="css/levus-touch-gallery.css">
         <style>
             .levus-touch-gallery{width:600px}@media(max-width:640px){.levus-touch-gallery{width:95%}}
         </style>
+
+        <!-- Fancybox -->
+        <link rel="stylesheet" href="css/fancybox.css">
 
         <link rel="icon" type="image/svg" sizes="152x152" href="favicon.svg">
     </head>
@@ -245,6 +248,47 @@
 
         <hr>
 
+        <p>Fancybox</p>
+
+        <div class="blocks-5">
+            <a href="images/01.jpg" title="Назва картинки 1" data-fancybox="gallery" data-caption="Назва картинки 1">
+                <div class="picture">
+                    <picture>
+                        <source srcset="images/01.webp" type="image/webp">
+                        <img src="images/01.jpg" alt="">
+                    </picture>
+                </div>                
+            </a>
+
+            <a href="images/02.jpg" title="Назва картинки 2" data-fancybox="gallery" data-caption="Назва картинки 2">
+                <div class="picture">
+                    <picture>
+                        <source srcset="images/02.webp" type="image/webp">
+                        <img src="images/02.jpg" alt="">
+                    </picture>
+                </div>                
+            </a>
+
+            <a href="images/03.jpg" title="Назва картинки 3" data-fancybox="gallery" data-caption="Назва картинки 3">
+                <div class="picture">
+                    <picture>
+                        <source srcset="images/03.webp" type="image/webp">
+                        <img src="images/03.jpg" alt="">
+                    </picture>
+                </div>                
+            </a>
+
+            <a href="images/04.jpg" title="Назва картинки 4" data-fancybox="gallery" data-caption="Назва картинки 4">
+                <div class="picture">
+                    <picture>
+                        <source srcset="images/04.webp" type="image/webp">
+                        <img src="images/04.jpg" alt="">
+                    </picture>
+                </div>                
+            </a>
+        </div>
+        <!-- .blocks-5 -- fancybox -->
+
     </div>
     <!-- .wrapper -->
 
@@ -306,16 +350,19 @@
     <script src="js/init.js"></script>
 
     <!-- Автослайдер на 4/3/2/1 елементи -->
-    <script src="https://lvivduncan.github.io/levus-horizontal-scroll/js/levus-horizontal-scroll.js"></script>
+    <script src="js/levus-horizontal-scroll.js"></script>
 
     <!-- Кнопка "догори" -->
-    <script src="https://lvivduncan.github.io/levus-up/js/levus-up.js"></script>
+    <script src="js/levus-up.js"></script>
 
     <!-- Шарбатони -->
-    <script src="https://lvivduncan.github.io/social-buttons/js/social-button.js"></script>
+    <script src="js/social-button.js"></script>
     
     <!-- Тачслайдер з мініатюрами та лайтбоксом -->
-    <script src="https://lvivduncan.github.io/levus-touch-gallery/js/levus-touch-gallery.js"></script>
+    <script src="js/levus-touch-gallery.js"></script>
+
+    <!-- Fancybox -->
+    <script src="js/fancybox.umd.js"></script>
 
 </body>
 </html>

@@ -7,6 +7,14 @@
     grid-gap: var(--gap20);
 }
 
+@media(max-width: 776px)
+{
+    #page
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* основна шпальта */
 #page main
 {
@@ -123,7 +131,36 @@
 }
 
 /* анонси */
-#page aside
+@media(max-width:776px)
 {
-    /* background: var(--white); */
+    
+    #page aside
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: var(--gap10);
+        align-items: flex-start;
+    }
+
+    #page aside .title
+    {
+        grid-column: 1/-1;
+    }
+
+    #page aside .article
+    {
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
 }
+
+@media(max-width:450px)
+{
+    #page aside
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* TODO: button center */

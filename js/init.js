@@ -51,7 +51,8 @@ const body = document.getElementsByTagName('body')[0];
 
 // news change
 {
-
+    const hot = document.querySelectorAll('#hot article');
+    
 }
 
 

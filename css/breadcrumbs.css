@@ -23,6 +23,14 @@
     }
 }
 
+@media(max-width:776px)
+{
+    #breadcrumbs
+    {
+        display: block;
+    }
+}
+
 #breadcrumbs .title
 {
     margin: 0;
@@ -33,9 +41,18 @@
     display: inline-block;
 }
 
+@media(max-width:776px)
+{
+    #breadcrumbs ol
+    {
+        margin: var(--gap20) 0 0;
+    }
+}
+
 #breadcrumbs li
 {
     display: inline-block;
+    line-height: 1.5;
 }
 
 #breadcrumbs li::before
