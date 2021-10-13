@@ -47,6 +47,12 @@
 /* 4 колонки: заголовок і 2 артикля під ним */
 @import url('./blocks-5.css');
 
+/* 2 колонки */
+@import url('./blocks-6.css');
+
+/* video */
+@import url('./video.css');
+
 @import url('./footer.css');
 
 @import url('./copy.css');

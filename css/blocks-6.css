@@ -1,0 +1,14 @@
+.blocks-6
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: var(--gap20);
+}
+
+@media(max-width:776px)
+{
+    .blocks-6
+    {
+        grid-template-columns: 1fr;
+    }
+}
