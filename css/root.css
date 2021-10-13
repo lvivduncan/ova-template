@@ -229,7 +229,6 @@ picture source
 }
 /* 19:6 */
 
-/* TODO: forms */
 
 /* малий рекламний блок */
 .insert-image
@@ -243,6 +242,6 @@ picture source
     box-shadow: var(--box-shadow);
 }
 
-/* TODO: grid-name rename */
+/* TODO: forms */
 
 /* TODO: search */
