@@ -1,0 +1,20 @@
+#status
+{
+    text-align: center;
+    padding: calc(var(--gap20)*4) 0;
+    width: 600px;
+    margin: auto;
+}
+
+@media(max-width:640px)
+{
+    #status
+    {
+        width: 95%;
+    }
+}
+
+#status h1
+{
+    color: var(--second);
+}

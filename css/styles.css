@@ -50,6 +50,8 @@
 /* 2 колонки */
 @import url('./blocks-6.css');
 
+@import url('./status.css');
+
 /* video */
 @import url('./video.css');
 
