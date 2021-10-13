@@ -11,8 +11,8 @@
     grid-template-columns: repeat(6,1fr);
     grid-gap: var(--gap20);
     grid-template-areas: 
-        'blocks-2-1 blocks-2-1 blocks-2-1 blocks-2-2 blocks-2-2 blocks-2-2'
-        'blocks-2-3 blocks-2-3 blocks-2-4 blocks-2-4 blocks-2-5 blocks-2-5';
+        'blocks_2-1 blocks_2-1 blocks_2-1 blocks_2-2 blocks_2-2 blocks_2-2'
+        'blocks_2-3 blocks_2-3 blocks_2-4 blocks_2-4 blocks_2-5 blocks_2-5';
 }
 
 @media(max-width:776px)
@@ -21,8 +21,8 @@
     {
         grid-template-columns: repeat(2,1fr);
         grid-template-areas: 
-            'blocks-2-1 blocks-2-2'
-            'blocks-2-3 blocks-2-4';
+            'blocks_2-1 blocks_2-2'
+            'blocks_2-3 blocks_2-4';
     }
 }
 
@@ -32,36 +32,36 @@
     {
         grid-template-columns: 1fr;
         grid-template-areas: 
-            'blocks-2-1'
-            'blocks-2-2'
-            'blocks-2-3'
-            'blocks-2-4';
+            'blocks_2-1'
+            'blocks_2-2'
+            'blocks_2-3'
+            'blocks_2-4';
     }
 }
 
 .blocks-2 .article:nth-child(1)
 {
-    grid-area: blocks-2-1;
+    grid-area: blocks_2-1;
 }
 
 .blocks-2 .article:nth-child(2)
 {
-    grid-area: blocks-2-2;
+    grid-area: blocks_2-2;
 }
 
 .blocks-2 .article:nth-child(3)
 {
-    grid-area: blocks-2-3;
+    grid-area: blocks_2-3;
 }
 
 .blocks-2 .article:nth-child(4)
 {
-    grid-area: blocks-2-4;
+    grid-area: blocks_2-4;
 }
 
 .blocks-2 .article:nth-child(5)
 {
-    grid-area: blocks-2-5;
+    grid-area: blocks_2-5;
 }
 
 @media(max-width:776px)
