@@ -114,7 +114,7 @@
 .calendar .days a, 
 .calendar .weeks span
 {
-    padding: var(--gap5) var(--gap10);
+    padding: var(--gap5) 0;
 }
 
 .calendar .days a
@@ -132,5 +132,3 @@
     color: var(--calendar-color-hover);
     transition: .5s;
 }
-
-/* TODO: width media-query */
