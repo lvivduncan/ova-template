@@ -52,25 +52,33 @@ const body = document.getElementsByTagName('body')[0];
 // news change
 {
     const hot = document.querySelectorAll('#hot article');
-    
+    const length = hot.length;
+    let counter = 0;
+
+    hot[0].classList.add('active');
+
+    setInterval(() => {
+        if(counter < length-1){
+
+            counter++;
+        } else {
+
+            counter = 0;
+        }
+
+        for(let i = 0; i < length; i++){
+            
+            hot[i].classList.remove('active');
+
+            hot[counter].classList.add('active');
+        }
+
+    }, 4000);
 }
-
-
-
-
-
-
-
-
-
 
 // check devices
 function isTouchDevice() {
     return (('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0));
 }
 
-
-
-
-
-// 12-10-2021
+// 13-10-2021

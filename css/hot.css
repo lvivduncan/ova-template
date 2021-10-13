@@ -42,11 +42,14 @@
     }
 }
 
-/* tmp */
-#hot article:nth-child(2),
-#hot article:nth-child(3)
+#hot article
 {
     display: none;
+}
+
+#hot article.active
+{
+    display: block;
 }
 
 #hot article h1
