@@ -1,6 +1,7 @@
 .button
 {
-    display: inline-flex;
+    display: block;
+    text-align: center;
     padding: var(--gap10) var(--gap15);
     color: var(--button-color);
     background: var(--button-bg);
@@ -19,5 +20,4 @@
 .button-bottom
 {
     margin-top: auto;
-    /* margin-bottom: var(--gap20); */
 }
